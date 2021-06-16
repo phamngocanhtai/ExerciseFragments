@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:contentDescription="@string/des"
+        android:layout_width="@dimen/largeAvatar"
+        android:layout_height="@dimen/largeAvatar"
+        android:layout_marginStart="@dimen/largeSpace"
+        android:layout_marginTop="@dimen/mediumSpace"
+        android:layout_marginBottom="@dimen/mediumSpace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_card" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/largeSpace"
+        android:padding="@dimen/smallSpace"
+        android:text="@string/name"
+        android:textColor="@color/teal_200"
+        android:textSize="@dimen/largeFontSize"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

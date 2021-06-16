@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="smallFontSize">12sp</dimen>
+    <dimen name="mediumFontSize">17sp</dimen>
+    <dimen name="largeFontSize">24sp</dimen>
+    <dimen name="smallSpace">8dp</dimen>
+    <dimen name="mediumSpace">20dp</dimen>
+    <dimen name="largeSpace">32dp</dimen>
+    <dimen name="smallAvatar">40dp</dimen>
+    <dimen name="mediumAvatar">60dp</dimen>
+    <dimen name="largeAvatar">80dp</dimen>
+
+</resources>

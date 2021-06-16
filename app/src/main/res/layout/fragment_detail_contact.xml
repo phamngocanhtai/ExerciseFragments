@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDetailContact">
+
+    <LinearLayout
+        android:id="@+id/detailContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/smallSpace"
+        app:layout_constraintBottom_toTopOf="@id/operationPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/des"
+            android:src="@drawable/icon_card" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:layout_marginStart="@dimen/largeSpace"
+            android:text="@string/name"
+            android:textColor="@color/teal_200"
+            android:textSize="@dimen/largeFontSize" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:layout_marginStart="@dimen/largeSpace"
+            android:text="@string/phone"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/mediumFontSize" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:layout_marginStart="@dimen/largeSpace"
+            android:text="@string/email"
+            android:textColor="@color/green"
+            android:textSize="@dimen/mediumFontSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operationPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/smallSpace"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailContact">
+
+        <ImageView
+            android:id="@+id/imgCall"
+            android:contentDescription="@string/des"
+            android:layout_width="@dimen/mediumAvatar"
+            android:layout_height="@dimen/mediumAvatar"
+            android:layout_marginStart="@dimen/largeSpace"
+            android:layout_marginEnd="@dimen/mediumSpace"
+            android:src="@drawable/ic_baseline_phone_24"/>
+
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:contentDescription="@string/des"
+            android:layout_width="@dimen/mediumAvatar"
+            android:layout_height="@dimen/mediumAvatar"
+            android:layout_marginStart="@dimen/largeSpace"
+            android:layout_marginEnd="@dimen/mediumSpace"
+            android:src="@drawable/ic_baseline_message_24"/>
+
+        <ImageView
+            android:id="@+id/imgEmail"
+            android:contentDescription="@string/des"
+            android:layout_width="@dimen/mediumAvatar"
+            android:layout_height="@dimen/mediumAvatar"
+            android:layout_marginStart="@dimen/largeSpace"
+            android:layout_marginEnd="@dimen/largeSpace"
+            android:src="@drawable/ic_baseline_email_24"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
